@@ -9,6 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^6.13.1",
+    "aws-amplify": "^6.15.1",
+    "axios": "^1.10.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.5.0",
     "vue": "^3.5.17"
   },
   "devDependencies": {

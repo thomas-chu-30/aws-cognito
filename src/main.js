@@ -1,6 +1,10 @@
-import './assets/main.css'
+import { createApp } from "vue";
+import App from "./App.vue";
+import "./assets/main.css";
 
-import { createApp } from 'vue'
-import App from './App.vue'
+import { Amplify } from "aws-amplify";
+import awsconfig from "./aws-exports";
 
-createApp(App).mount('#app')
+Amplify.configure(awsconfig); // 包含 Auth 的初始化
+
+createApp(App).mount("#app");
