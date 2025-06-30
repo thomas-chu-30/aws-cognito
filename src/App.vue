@@ -1,9 +1,7 @@
-<script setup>
-import CognitoLogin from "./components/CognitoLogin.vue";
-</script>
+<script setup></script>
 
 <template>
-  <CognitoLogin />
+  <router-view />
 </template>
 
 <style scoped></style>
