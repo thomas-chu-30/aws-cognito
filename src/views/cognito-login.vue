@@ -14,12 +14,12 @@ const password = ref("");
 const user = ref(null);
 const error = ref("");
 
-const CLIENT_ID = import.meta.env.VITE_CLIENT_ID;
-const REGION = import.meta.env.VITE_REGION;
+const CLIENT_ID = import.meta.env.VITE_CLIENT_ID || "2pdlkel377hajgnduf37aag4ha";
+const REGION = import.meta.env.VITE_REGION || "us-east-1";
 const message = ref("");
 const showConfirm = ref(false);
 
-const clientSecret = import.meta.env.VITE_CLIENT_SECRET;
+const clientSecret = import.meta.env.VITE_CLIENT_SECRET || "famoontta7vf3cg69lrmkmats0f62laqemqas30qibn5pkvk72m";
 function getSecretHash(username, clientId) {
   console.log("clientSecret", clientSecret);
   if (!clientSecret || !username || !clientId) {
