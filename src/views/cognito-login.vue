@@ -21,6 +21,10 @@ const showConfirm = ref(false);
 
 const clientSecret = import.meta.env.VITE_CLIENT_SECRET;
 function getSecretHash(username, clientId) {
+  console.log("clientSecret", clientSecret);
+  if (!clientSecret || !username || !clientId) {
+    throw new Error("SecretHash 參數未設定正確");
+  }
   const message = username + clientId;
   const hash = CryptoJS.HmacSHA256(message, clientSecret);
   return CryptoJS.enc.Base64.stringify(hash);
