@@ -4,7 +4,6 @@ import { Amplify, type ResourcesConfig } from "aws-amplify";
 import { ref } from "vue";
 import awsconfig from "../aws-exports";
 
-console.log("awsconfig", awsconfig);
 Amplify.configure(awsconfig as ResourcesConfig);
 
 const email = ref("coreisdontgu@gmail.com");

@@ -6,6 +6,7 @@
       <li class="underline"><router-link to="/">Cognito Login</router-link></li>
       <li class="underline"><router-link to="/cognito-login-amplify">Cognito Login Amplify</router-link></li>
       <li class="underline"><router-link to="/google">Google Login</router-link></li>
+      <li class="underline"><router-link to="/google-amplify">Google Login Amplify</router-link></li>
     </ol>
     <div class="flex-1 flex items-center justify-center">
       <router-view />

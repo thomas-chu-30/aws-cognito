@@ -45,7 +45,7 @@ onMounted(() => {
         console.log("Cognito token response:", data);
         window.localStorage.setItem("cognito_accessToken", data.access_token);
 
-        getCognitoUser();
+        // getCognitoUser();
 
         window.localStorage.setItem("cognito_refreshToken", data.refresh_token);
         window.localStorage.setItem("cognito_idToken", data.id_token);
