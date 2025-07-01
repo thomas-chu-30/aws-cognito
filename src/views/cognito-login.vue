@@ -115,7 +115,7 @@ const logout = () => {
 };
 </script>
 <template>
-  <div class="login-container">
+  <div class="flex items-center justify-center h-full">
     <div class="login-card">
       <h2 class="login-title">AWS Cognito 註冊/登入</h2>
       <div v-if="!user">
@@ -153,14 +153,6 @@ const logout = () => {
 </template>
 
 <style scoped>
-.login-container {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
-  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
-}
 .login-card {
   background: #fff;
   padding: 2.5rem 2rem 2rem 2rem;

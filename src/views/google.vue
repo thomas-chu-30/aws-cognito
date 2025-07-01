@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const CLIENT_ID = "2pdlkel377hajgnduf37aag4ha";
 const COGNITO_DOMAIN = "https://cognito-idp.us-east-1.amazonaws.com";
-const REDIRECT_URI = "http://localhost:5173/aws-cognito/google";
+const REDIRECT_URI = "http://localhost:3000/aws-cognito/google";
 
 const loginWithGoogle = () => {
   const url =
@@ -18,7 +18,7 @@ const loginWithGoogle = () => {
 };
 </script>
 <template>
-  <div class="login-container">
+  <div class="flex flex-col items-center justify-center">
     <h1 class="mb-4">Google</h1>
 
     <button class="login-btn" style="max-width: 320px" @click="loginWithGoogle">Sign in with Google</button>
@@ -26,15 +26,6 @@ const loginWithGoogle = () => {
 </template>
 
 <style scoped>
-.login-container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
-}
-
 .login-btn {
   width: 100%;
   padding: 0.75rem 1rem;
