@@ -1,9 +1,13 @@
-const awsconfig = {
+import type { ResourcesConfig } from "aws-amplify";
+
+const awsconfig: ResourcesConfig = {
   Auth: {
     Cognito: {
-      region: "us-east-1",
-      userPoolId: "us-east-1_fwwk6rvn2",
-      userPoolWebClientId: "2pdlkel377hajgnduf37aag4ha",
+      userPoolId: "us-east-1_Y5tslQMQo",
+      userPoolClientId: "76fvfp1bad65i00q1t9nttbn3r",
+      identityPoolId: "us-east-1:458549319596",
+      identityPoolEndpoint: "https://cognito-idp.us-east-1.amazonaws.com",
+      userPoolEndpoint: "https://cognito-idp.us-east-1.amazonaws.com",
       loginWith: {
         email: true,
       },
